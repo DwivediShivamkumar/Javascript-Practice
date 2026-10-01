@@ -11,7 +11,7 @@
   const id = Symbol('123')
   const anotherId = Symbol('123')
 
- console.log(id === anotherId)
+ //console.log(id === anotherId)
 
  const bigNumber = 3456789012345678901234567890n
 
@@ -27,7 +27,30 @@
 
 
  const myFunction = function(){
-  console.log("Hello Shivam")
+  //console.log("Hello Shivam")
  }
  //return myFunction();
- console.log(typeof myFunction);
+ //console.log(typeof myFunction);
+
+
+// ****************************************************************************
+
+ // Stack(primitive ) and Heap(Non-Primitive) memory allocation
+
+ let myName = "Shivam"
+ let anotherName = myName
+ anotherName = "Kumar"
+
+//  console.log(myName)
+//  console.log(anotherName)
+
+ let user1 = {
+  name: "Shivam",
+  age: 20,
+ }
+
+ let user2 = user1
+ user2.name = "Dubey"
+
+ console.log(user1.name)
+ console.log(user2.name)
